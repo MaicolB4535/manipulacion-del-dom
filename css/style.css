@@ -1,0 +1,239 @@
+body{
+    background-image: url(../img/fondo.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#padre{
+    min-height: 100vh;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
+}
+#columnas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    min-height: 70vh;
+}
+
+#columnas .col-der, .col-izq{
+    text-align: center;
+    width: 50%;
+    background-color: #00000080;
+    border: 1px solid #fff;
+    padding: 40px;
+    min-height: 600px;
+}
+
+#columnas .col-izq button{
+    padding: 5px;
+    font-size: 25px;
+    margin: 5px;
+    background-color:beige;
+    border-radius: 10px;
+    transition: .5s;
+    cursor: grab;
+}
+
+#columnas .col-izq button:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-color: #000;
+}
+
+h1{
+    font-size: 40px;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 150px;
+}
+
+#figura{
+    width: 210px;
+    height: 210px;
+    background: #fff;
+    margin: 100px auto;
+    transition: 1s;
+}
+
+#figura.circulo{
+    transform: scale(1.8) rotate(360deg);
+    border-radius: 50%;
+    background-color: aqua;
+}
+
+#figura.rectangulo{
+    height: 300px;
+    width: 100px;
+    background-color: #ff0000;
+    transform: rotate(90deg);
+}
+
+#figura.moveRight{
+    transform: translateX(150px);
+}
+
+#figura.moveLeft{
+    transform: translateX(-150px);
+}
+
+#figura.top{
+    transform: translateY(-130px);
+}
+
+#figura.bottom{
+    transform: translateY(150px);
+}
+
+#figura.luna-creciente {
+    background-color: #ffffff00;
+    transform: rotate(10deg);
+    height: 200px;
+    width: 200px;
+    box-shadow: -70px 10px 0 5px #00BCD4;
+    border-radius: 100%;
+}
+
+#figura.estrella{
+    background-color: transparent;
+    margin: 10px 250px;
+    margin-top: 220px;
+    position: relative;
+    display: block;
+    color: #000;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #00ffff;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+
+#figura.estrella::before{
+    background-color: transparent;
+    border-bottom: 80px solid #00ffff;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+}
+
+#figura.estrella::after{
+    background-color: transparent;
+    position: absolute;
+    display: block;
+    color: #00ffff;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid #00ffff;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+}
+
+#figura.fondoDegradado{
+    background: linear-gradient(to right, #00ff08, rgb(19, 260, 245));
+}
+
+#figura.moveDiagonal{
+    transform: translate(160px, 140px);
+}
+
+#figura.moveDiagonal2{
+    transform: translate(-160px, 140px);
+}
+
+#figura.moveDiagonal3{
+    transform: translate(160px, -140px);
+}
+
+#figura.moveDiagonal4{
+    transform: translate(-160px, -140px);
+}
+
+#panelLateral{
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    left: -450px;
+    top: 0;
+    z-index: 9;
+    background-color: #ffffff;
+}
+
+#panelLateral.active{
+    left: 0;
+    transition: 1s;
+}
+
+#panelLateral h2{
+    color: #000;
+    font-size: 40px;
+    padding: 40px 30px;
+}
+
+#panelLateral ul{
+    width: 80%;
+    margin: 20px auto;
+}
+
+#panelLateral ul a{
+    display: block;
+    padding: 20px;
+    background-color: #000;
+    color: #ffffff;
+    margin: 20px 0;
+    text-decoration: none;
+    font-size: 22px;
+    transition: .5s;
+}
+
+#panelLateral ul a:hover{
+    border-radius: 10px;
+}
+
+#panelSuperior{
+    width: 100%;
+    height: 400px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: -80%;
+    z-index: 10;
+    text-align: center;
+}
+
+#panelSuperior.active{
+    top: 0;
+    transition: 1s;
+}  
+
+#cuerpo.cambiarImagen{
+    background-image: url(../img/escenario_torneo_de_fuerza_v2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulacion del DOM</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="cuerpo">
+
+    <section id="padre" class="">
+
+        <div id="panelLateral">
+            <h2>Menú principal</h2>
+            <ul>
+                <a href="#">inicio</a>
+                <a href="#">perfil</a>
+                <a href="#">estudios</a>
+                <a href="#">hobbies</a>
+                <a href="#">habilidades</a>
+            </ul>
+        </div>
+
+        <div id="panelSuperior">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YDwiDkxjRgQ?si=u1pBQMidjcqiU-_C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>       
+         </div>
+
+        <fila id="columnas">
+
+            <div class="col-izq">
+                <h1>Botones</h1>
+                <button onclick="circulo()">Circulo</button>
+                <button onclick="rectangulo()">Rectangulo</button>
+                <button onclick="fondoDegradado()">Degradado</button>
+                <button onclick="mostrarGif()">gif</button><br>
+                <button onclick="luna()">Luna</button>
+                <button onclick="estrella()">Estrella</button>
+                <button onclick="moveTop()">Top</button>
+                <button onclick="moveBottom()">Bottom</button><br>
+                <button onclick="moveLeft()">Left</button>
+                <button onclick="moveRight()">Right</button>
+                <button onclick="moveDiagonal()">Diagonal</button>
+                <button onclick="panelLateral()">Panel Lateral</button>
+                <button onclick="panelSuperior()">Panel Superior</button>
+                <button onclick="bgFigura()">Cambiar color de la figura</button>
+                <button onclick="fondoPantalla()">Cambiar color de fondo</button>
+                <button onclick="fondoPantallaBody()">Cambiar color de fondo general</button>
+                <button onclick="imgFondo()">Cambiar imagen de fondo</button>
+            </div>
+
+            <div class="col-der">
+                <h1 id="titulo">Figura</h1>
+                <div id="figura" class=""></div>
+            </div>
+
+        </fila>
+
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
